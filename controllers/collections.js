@@ -19,7 +19,6 @@ const getAllCollections = async (req, res) => {
     .json({ count: collections.length, collections: collections })
 }
 
-//TODO: remove the cards from the collection as well
 const deleteCollection = async (req, res) => {
   const {
     user: { userId },
